@@ -10,13 +10,20 @@
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
+      
       <p>단락</p>
+      
       <p>
           줄 나누기<br>           <!-- 줄 바꿈-->
           줄 나누기<br> 안녕
-      </p>
-      <hr>               <!-- 수평선 -->
-      <pre>
+      
+        </p>
+      
+        <hr>               <!-- 수평선 -->
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <pre>
           텍스트 서식 
           <ins> <strong>
           서식을            그  대  로           출력
@@ -28,9 +35,10 @@
 
           서식 출력
       </pre>
-      <hr>               <!-- 수평선 -->       
+      <hr>               <!-- 수평선 -->
 
-      
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
       <b>굵게</b>
       <i>이텔릭</i>
       <small>작게</small>
@@ -43,26 +51,26 @@
       <sup>위 첨자</sup>
       <sub>아래 첨자</sub>
 
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
       <q>인용구</q>
       <blockquote>
           길이가 긴 인용구는 블록 인용구를 사용
       </blockquote>
-      <abbr title="Hyper Text Markup Language">HTML</abbr>
-      <cite>The Matrix</cite>
-      <address>대구광역시 달서구 새동네로34</address>
-      <address>zzzzzzz</address>
+      <abbr title="Hyper Text Markup Language">HTML</abbr>  <br> <br>
+      <cite>The Matrix</cite>                               <br> <br>
+      <address>대구광역시 달서구 새동네로34</address>         <br>
+      <address>zzzzzzz</address>                            <br>
 
-      <a href="http://www.naver.com" target="_blank">네이버</a>      <!-- 하이퍼 링크-->
-      <a href="#content1">Content 1</a>                             <!-- 웹 내부 이동-->
+      <a href="http://www.naver.com" target="_blank">네이버</a> <br> <br>    <!-- 하이퍼 링크-->
+      <a href="#content1">Content 1</a>                                      <!-- 웹 내부 이동-->
       <a href="#content2">Content 2</a>
       <a href="#content3">Content 3</a>
       <hr>
       <h1 id="content1">Contnent 1</h1>
       <h1 id="content2">Contnent 2</h1>
       <h1 id="content3">Contnent 3</h1>
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
       <ul>                                       <!-- 순서 없는 리스트 -->
           <li>HTML</li>                          <!-- 리스트 -->
@@ -80,8 +88,7 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
-
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <ol>                                         <!-- 순서 있는 리스트-->
         <li>HTML</li>                            <!-- 리스트 -->
         <li>CSS</li>
@@ -107,10 +114,8 @@
         <li>CSS</li>
         <li>Java</li>
     </ol>
-
-
-
-    <dl>                                         <!-- 정의가 있는 리스트-->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <dl>                                         <!-- 정의가 있는 리스트 (순서 X)-->
         <dt>HTML</dt>                            <!-- 리스트 -->
         <dd>웹 페이지를 위한 마크업 언어</dd>      <!-- 리스트 설명 -->
         <dt>CSS</dt>
@@ -118,7 +123,7 @@
         <dt>JavaScript</dt>
         <dd>웹 브라우전 내에서 주로 사용되는 객체 기반 스크립트 프로그래밍 언어</dd>
     </dl>
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <table border="1">                           <!-- 테이블 두께 -->
         <caption>사람 표</caption>               <!-- 테이블 이름 -->
@@ -190,9 +195,62 @@
         </tbody>
 
     </table>
-        
-            <div style="border: 1px solid black">여기 부분은 내 영역</div>
-            <span style="background-color: aqua;">민트색이 좋아요</span>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <br>
+            <div style="border: 1px solid black">여기 부분은 내 영역</div>            <!-- 공간 분할 div-->
+            <br>
+            <span style="background-color: aqua;">민트색이 좋아요</span>              <!-- 공간 분할 span-->   
+            <br>
+            <br>
+            <iframe src="iframe.html" name="iframe_a" height="300" width="300" title="Iframe Example"></iframe> <!-- 공간 분할 iframe-->
+            <p><a href="http://www.suanlab.com/" target="iframe_a">SuanLab.com</a></p>                           <!-- iframe 공간에 사이트 띄우기 -->   
+            
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <form name="승근" action="sign.jsp" method="post">                                 <!-- form 태그 -->      <!-- action =  버튼 등 액션후 실행 값-->
+                <label for="name">이름</label>                                                <!-- label= 이름 -->
+                <input type="text" id="name" name="name"  value="홍승근" size="30">           <!-- input = 입력창 만들기   value = 값 -->
+                <br>
+                <br>
+                <select id="food" name="food" multiple>                                      <!-- select = 드롭다운 만들기  multiple = 다중선택 -->
+                    <optgroup label="음식">                                                   <!-- select 옵션 -->
+                        <option value="pizza" selected>피자</option>
+                        <option value="hamburger" selected>햄버거</option>
+                        <option value="pasta" selected>파스타</option>
+                    </optgroup>
+                    <optgroup label="디저트">
+                        <option value="ade" selected>에이드</option>
+                        <option value="coffee" selected>커피</option>
+                        <option value="cake" selected>케이크</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <textarea name="article" rows="5" cols="10">텍스트</textarea>       <br>         <!-- 텍스트 입력 칸 -->            
+
+                <button>Button</button>
+                <fieldset>                                                                              <!-- 필드 만들기 -->
+                    <legend>개인정보</legend>                                                            <!-- 필드의 이름 ? -->
+                    <label for="name">이름 : </label> <br>                                              <!-- Label = input 텍스트 입력창의 이름 ?-->
+                    <input type="text" id="name" name="name" value="홍승근"> <br>
+                    <label for="affiliation">소속</label> <br>
+                    <input type="text" id="affiliation" namne="affiliation" value="승근"> <br><br>
+                    <input type="submit" value="전송">
+                </fieldset>
+
+                <input list="browsers">                                    
+                <datalist id="browsers">                                        <!-- datalist = input 입력창의 리스트 옵션 ?-->
+                    <option value="Chrom"></option>                             <!-- datelist의 옵션 -> 값들 -->
+                    <option value="firefox"></option>
+                    <option value="Internet Explorer"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+
+
+            </form>
     </body>
 </html>
 
