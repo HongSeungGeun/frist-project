@@ -2,18 +2,19 @@
 <html lang="ko">
     <head>
         <title>홍승근</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-      <h1>Heading 1</h1>             <!-- 글자 크키 (1이 가장 큼)-->
-      <h2>Heading 2</h2>
+      <h1 class="color-primary">Heading 1</h1>             <!-- 글자 크키 (1이 가장 큼)-->
+      <h2 class="color-primary">Heading 2</h2>
       <h3>Heading 3</h3>
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
       
-      <p>단락</p>
+      <p class="color-primary">단락</p>
       
-      <p>
+      <p class="color-primary">
           줄 나누기<br>           <!-- 줄 바꿈-->
           줄 나누기<br> 안녕
       
@@ -39,12 +40,12 @@
 
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-      <b>굵게</b>
+      <b class="color-primary font-50">굵게</b>
       <i>이텔릭</i>
       <small>작게</small>
       <ins>밑줄</ins>
       <del>가운데 선</del>
-      <mark>하이라이트</mark>
+      <mark class="color-primary">하이라이트</mark>
       <strong>중요</strong>
       <code>코드</code>
       <em>강조</em>
@@ -214,7 +215,7 @@
                 <input type="text" id="name" name="name"  value="홍승근" size="30">           <!-- input = 입력창 만들기   value = 값 -->
                 <br>
                 <br>
-                <select id="food" name="food" multiple>                                      <!-- select = 드롭다운 만들기  multiple = 다중선택 -->
+                <select id="food" name="food" multiple class="select-style1">                                      <!-- select = 드롭다운 만들기  multiple = 다중선택 -->
                     <optgroup label="음식">                                                   <!-- select 옵션 -->
                         <option value="pizza" selected>피자</option>
                         <option value="hamburger" selected>햄버거</option>
@@ -230,7 +231,7 @@
                 <br>
                 <textarea name="article" rows="5" cols="10">텍스트</textarea>       <br>         <!-- 텍스트 입력 칸 -->            
 
-                <button>확인</button>
+                <button class = "button-style1">확인</button>
                 <fieldset>                                                                              <!-- 필드 만들기 -->
                     <legend>개인정보</legend>                                                            <!-- 필드의 이름 ? -->
                     <label for="name">이름 : </label> <br>                                              <!-- Label = input 텍스트 입력창의 이름 ?-->
@@ -332,3 +333,4 @@
 </html>
 
 <!-- git add. , git status , git commit -m "(4)+1 commit" , git push origin master -->
+ 

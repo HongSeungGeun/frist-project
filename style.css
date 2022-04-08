@@ -1,0 +1,16 @@
+.color-primary {
+    color: rgb(233, 0, 58);
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+.select-style1 {
+    color: blue;
+}
+
+.button-style1 {
+    color: red;
+    height: 50px;
+}
