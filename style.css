@@ -14,3 +14,49 @@
     color: red;
     height: 50px;
 }
+
+.tb>thead>tr>td {
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+.tb>tbody>tr>td {
+    border: 1px solid #000;
+}
+
+input {
+    background-color: palevioletred;
+}
+
+ol {
+    background-color: burlywood;
+}
+
+.img-size {
+    width: 400px;
+    height: 275px;
+}
+
+.border-green {
+    border: 1px solid green;
+    text-align: center;
+}
+
+.div-style {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+ 
+.margin-space {                           /*margin = 여백 (바깥쪽) */
+    margin-top: 40px;                
+    margin-left: 200px;
+}
+
+.padding-space {                         /*padding = 여백 (안쪽) */
+    padding-top: 200px;
+    padding-left: 100px;
+}
